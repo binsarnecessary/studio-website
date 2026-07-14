@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<title>Proposal — Studio Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root { --ink:#111111; --bg:#F5F5F5; --accent:#2563EB; --muted:#6b7280; --line:#e5e7eb; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:Inter,sans-serif; color:var(--ink); font-size:13px; line-height:1.7; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page { width:210mm; min-height:297mm; margin:0 auto; padding:16mm 18mm; page-break-after:always; }
+  .page:last-child { page-break-after:auto; }
+  h1,h2 { font-family:"Playfair Display",serif; }
+  /* Cover */
+  .cover { background:var(--ink); color:#fff; display:flex; flex-direction:column; justify-content:space-between; }
+  .cover .brand { font-family:"Playfair Display",serif; font-size:22px; font-weight:700; }
+  .cover .brand span { color:var(--accent); }
+  .cover .mid h1 { font-size:44px; line-height:1.2; color:#fff; max-width:80%; }
+  .cover .mid .accentbar { width:80px; height:5px; background:var(--accent); margin:24px 0; }
+  .cover .mid p { color:#9ca3af; font-size:15px; }
+  .cover .bottom { color:#9ca3af; font-size:12px; display:flex; justify-content:space-between; }
+  /* Inner */
+  h2.sec { font-size:22px; margin:26px 0 4px; }
+  .sec-tag { font-size:11px; text-transform:uppercase; letter-spacing:2px; color:var(--accent); font-weight:700; margin-top:20px; }
+  p.lead { color:var(--muted); }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:12px; }
+  .card { background:var(--bg); border-left:3px solid var(--accent); padding:14px 16px; }
+  .card strong { display:block; margin-bottom:2px; }
+  .card p { font-size:12.5px; color:var(--muted); }
+  table { width:100%; border-collapse:collapse; margin-top:10px; }
+  th { background:var(--ink); color:#fff; text-align:left; padding:9px 14px; font-size:11px; text-transform:uppercase; letter-spacing:1px; }
+  th:last-child, td:last-child { text-align:right; }
+  td { padding:10px 14px; border-bottom:1px solid var(--line); }
+  .grand { background:var(--accent); color:#fff; font-weight:700; }
+  .grand td { border:none; }
+  ul { padding-left:18px; }
+  li { margin-bottom:4px; }
+  .head-inner { display:flex; justify-content:space-between; border-bottom:2px solid var(--ink); padding-bottom:12px; font-size:12px; color:var(--muted); }
+  .head-inner b { font-family:"Playfair Display",serif; font-size:15px; color:var(--ink); }
+  .head-inner b span { color:var(--accent); }
+  @page { size:A4; margin:0; }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="page cover">
+  <div class="brand">Studio<span>Website</span></div>
+  <div class="mid">
+    <p style="letter-spacing:3px; text-transform:uppercase; font-size:12px; color:var(--accent); font-weight:700">Proposal Penawaran</p>
+    <h1>Pembuatan Website [Nama Client]</h1>
+    <div class="accentbar"></div>
+    <p>Disiapkan untuk: <strong style="color:#fff">[Nama Client / Perusahaan]</strong><br />Tanggal: 2 Juli 2026 · No: PRO/2026/07/001</p>
+  </div>
+  <div class="bottom">
+    <span>binsar16febuary@gmail.com · +62 812-3456-7890</span>
+    <span>Build Better Digital Presence.</span>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="page">
+  <div class="head-inner"><b>Studio<span>Website</span></b><span>Proposal — PRO/2026/07/001</span></div>
+
+  <p class="sec-tag">01 — Latar Belakang</p>
+  <h2 class="sec">Kenapa Website Ini Penting</h2>
+  <p class="lead">[Ringkas masalah/kebutuhan client. Contoh:] Saat ini [Nama Client] belum memiliki website resmi, sehingga calon pelanggan sulit menemukan informasi dan kredibilitas bisnis belum maksimal. Website profesional akan menjadi aset digital yang bekerja 24 jam menghadirkan calon pelanggan baru.</p>
+
+  <p class="sec-tag">02 — Solusi yang Kami Tawarkan</p>
+  <h2 class="sec">Website Cepat, Premium, &amp; SEO Friendly</h2>
+  <div class="grid2">
+    <div class="card"><strong>Design Premium</strong><p>Tampilan modern sesuai identitas brand, bukan template pasaran.</p></div>
+    <div class="card"><strong>Cepat &amp; Mobile Friendly</strong><p>Target skor Lighthouse 90+, nyaman diakses dari HP.</p></div>
+    <div class="card"><strong>SEO Friendly</strong><p>Struktur teroptimasi agar mudah ditemukan di Google.</p></div>
+    <div class="card"><strong>Terhubung WhatsApp</strong><p>Calon pelanggan bisa langsung chat dari website.</p></div>
+  </div>
+
+  <p class="sec-tag">03 — Ruang Lingkup</p>
+  <h2 class="sec">Yang Anda Dapatkan</h2>
+  <ul>
+    <li>Website [jenis: company profile / landing page] dengan halaman: [Home, About, Services, Gallery, FAQ, Contact]</li>
+    <li>Design custom sesuai brand + responsive semua perangkat</li>
+    <li>SEO dasar, Google Analytics, dan tombol WhatsApp</li>
+    <li>Setup domain &amp; deployment sampai online</li>
+    <li>Support gratis 1 bulan setelah launching</li>
+  </ul>
+
+  <p class="sec-tag">04 — Timeline</p>
+  <h2 class="sec">10 Hari Kerja</h2>
+  <table>
+    <thead><tr><th>Hari</th><th>Tahap</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Requirement &amp; pengumpulan materi</td></tr>
+      <tr><td>2–3</td><td>Wireframe &amp; design</td></tr>
+      <tr><td>4–7</td><td>Development</td></tr>
+      <tr><td>8–9</td><td>Revisi &amp; testing</td></tr>
+      <tr><td>10</td><td>Deployment &amp; serah terima</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="page">
+  <div class="head-inner"><b>Studio<span>Website</span></b><span>Proposal — PRO/2026/07/001</span></div>
+
+  <p class="sec-tag">05 — Investasi</p>
+  <h2 class="sec">Biaya</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Harga</th></tr></thead>
+    <tbody>
+      <tr><td>[Company Profile Website — 5–8 halaman]</td><td>Rp5.000.000</td></tr>
+      <tr><td>Domain &amp; deployment + support 1 bulan</td><td>Termasuk</td></tr>
+      <tr class="grand"><td>Total</td><td>Rp5.000.000</td></tr>
+    </tbody>
+  </table>
+  <p style="margin-top:8px; color:var(--muted); font-size:12px">Pembayaran: DP 50% di awal, pelunasan sebelum website online di domain Anda. Opsional: maintenance bulanan mulai Rp300.000/bulan.</p>
+
+  <p class="sec-tag">06 — Tentang Kami</p>
+  <h2 class="sec">Studio Website</h2>
+  <p class="lead">Studio digital yang membantu bisnis memiliki website profesional, sistem digital, dan AI automation. Kami mengerjakan project untuk berbagai industri: F&amp;B, property, travel, klinik, hukum, dan SaaS — semua dengan standar production: cepat, responsive, dan SEO friendly.</p>
+  <p style="margin-top:6px">Portfolio lengkap: <strong style="color:var(--accent)">[link-portfolio-anda.com]</strong></p>
+
+  <p class="sec-tag">07 — Langkah Selanjutnya</p>
+  <h2 class="sec">Cara Memulai</h2>
+  <ul>
+    <li>Konfirmasi persetujuan proposal ini via WhatsApp/email.</li>
+    <li>Kami kirimkan invoice DP 50% + daftar materi yang dibutuhkan.</li>
+    <li>Pengerjaan dimulai — Anda menerima update progres berkala.</li>
+  </ul>
+
+  <div style="margin-top:36px; background:var(--ink); color:#fff; padding:22px 26px; display:flex; justify-content:space-between; align-items:center">
+    <div>
+      <strong style="font-size:15px">Siap memulai?</strong><br />
+      <span style="color:#9ca3af; font-size:12px">Hubungi kami — respon cepat di jam kerja.</span>
+    </div>
+    <div style="text-align:right; font-size:12.5px">
+      +62 812-3456-7890<br />binsar16febuary@gmail.com
+    </div>
+  </div>
+</div>
+</body>
+</html>

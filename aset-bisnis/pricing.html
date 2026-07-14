@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<title>Pricing — Studio Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root { --ink:#111111; --bg:#F5F5F5; --accent:#2563EB; --muted:#6b7280; --line:#e5e7eb; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:Inter,sans-serif; color:var(--ink); font-size:13px; line-height:1.65; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page { width:210mm; min-height:297mm; margin:0 auto; padding:16mm 18mm; }
+  h1,h3.name { font-family:"Playfair Display",serif; }
+  .head { display:flex; justify-content:space-between; align-items:flex-end; border-bottom:3px solid var(--ink); padding-bottom:18px; }
+  .brand { font-family:"Playfair Display",serif; font-size:24px; font-weight:700; }
+  .brand span { color:var(--accent); }
+  .brand small { display:block; font-family:Inter; font-size:11px; font-weight:400; color:var(--muted); letter-spacing:1px; }
+  .head h1 { font-size:30px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:22px; }
+  .plan { border:1.5px solid var(--line); padding:18px 20px; position:relative; }
+  .plan.hot { border-color:var(--accent); }
+  .plan .tag { position:absolute; top:-9px; left:16px; background:var(--accent); color:#fff; font-size:10px; font-weight:700; letter-spacing:1px; padding:2px 10px; }
+  .plan h3.name { font-size:17px; }
+  .plan .price { font-size:22px; font-weight:700; color:var(--accent); margin:2px 0 8px; }
+  .plan .price small { font-size:11px; color:var(--muted); font-weight:500; }
+  .plan ul { padding-left:16px; font-size:12px; color:var(--muted); }
+  .plan li { margin-bottom:2.5px; }
+  .extra { margin-top:18px; background:var(--bg); border-left:3px solid var(--accent); padding:14px 18px; }
+  .extra h3 { font-size:11px; text-transform:uppercase; letter-spacing:2px; color:var(--accent); margin-bottom:6px; }
+  .extra table { width:100%; border-collapse:collapse; font-size:12px; }
+  .extra td { padding:5px 0; border-bottom:1px dashed var(--line); }
+  .extra td:last-child { text-align:right; font-weight:600; }
+  .notes { margin-top:16px; font-size:11px; color:var(--muted); }
+  .cta { margin-top:18px; background:var(--ink); color:#fff; padding:18px 22px; display:flex; justify-content:space-between; align-items:center; }
+  .cta p { color:#9ca3af; font-size:12px; }
+  @page { size:A4; margin:0; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="head">
+    <div class="brand">Studio<span>Website</span>
+      <small>WEBSITE • AUTOMATION • DIGITAL SOLUTION</small>
+    </div>
+    <h1>Daftar Harga 2026</h1>
+  </div>
+
+  <div class="grid">
+    <div class="plan">
+      <h3 class="name">Landing Page</h3>
+      <div class="price">Rp2.500.000 <small>sekali bayar</small></div>
+      <ul>
+        <li>1 halaman fokus konversi</li>
+        <li>Design premium &amp; responsive</li>
+        <li>SEO friendly + WhatsApp CTA</li>
+        <li>Setup domain &amp; deployment</li>
+        <li>Pengerjaan ± 5 hari kerja</li>
+      </ul>
+    </div>
+    <div class="plan hot">
+      <span class="tag">PALING POPULER</span>
+      <h3 class="name">Company Profile</h3>
+      <div class="price">Rp5.000.000 <small>sekali bayar</small></div>
+      <ul>
+        <li>5–8 halaman lengkap</li>
+        <li>Gallery, FAQ, Testimonial, Pricing</li>
+        <li>SEO + Open Graph + Analytics</li>
+        <li>Support gratis 1 bulan</li>
+        <li>Pengerjaan ± 10 hari kerja</li>
+      </ul>
+    </div>
+    <div class="plan">
+      <h3 class="name">Business Website</h3>
+      <div class="price">Rp8.000.000 <small>sekali bayar</small></div>
+      <ul>
+        <li>Semua fitur Company Profile</li>
+        <li>Blog / CMS untuk update mandiri</li>
+        <li>Booking / katalog produk</li>
+        <li>Copywriting dibantu</li>
+        <li>Support gratis 3 bulan</li>
+      </ul>
+    </div>
+    <div class="plan">
+      <h3 class="name">Custom Web App</h3>
+      <div class="price">Mulai Rp10.000.000 <small>sesuai scope</small></div>
+      <ul>
+        <li>Dashboard, CRM, booking, inventory</li>
+        <li>Database &amp; user authentication</li>
+        <li>Fitur custom sesuai proses bisnis</li>
+        <li>Deploy Vercel / VPS</li>
+        <li>Timeline sesuai kesepakatan</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="extra">
+    <h3>Layanan Lainnya</h3>
+    <table>
+      <tr><td>AI Automation (WhatsApp, email, chatbot, n8n workflow)</td><td>By requirement</td></tr>
+      <tr><td>Maintenance website (update, backup, monitoring)</td><td>Mulai Rp300.000/bulan</td></tr>
+      <tr><td>Halaman tambahan</td><td>Rp350.000/halaman</td></tr>
+      <tr><td>Copywriting full website</td><td>Mulai Rp750.000</td></tr>
+    </table>
+  </div>
+
+  <p class="notes">* Harga belum termasuk sewa domain/hosting tahunan (dibantu setup). Pembayaran: DP 50% di awal, pelunasan sebelum launching. Termasuk 2x sesi revisi. Harga dapat berubah sewaktu-waktu — hubungi kami untuk penawaran terbaru.</p>
+
+  <div class="cta">
+    <div>
+      <strong style="font-size:15px">Konsultasi gratis sebelum memutuskan.</strong>
+      <p>Ceritakan kebutuhan Anda — kami bantu pilihkan paket yang paling sesuai.</p>
+    </div>
+    <div style="text-align:right; font-size:12.5px">
+      +62 812-3456-7890<br />binsar16febuary@gmail.com
+    </div>
+  </div>
+</div>
+</body>
+</html>

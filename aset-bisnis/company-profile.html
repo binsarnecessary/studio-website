@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<title>Company Profile — Studio Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root { --ink:#111111; --bg:#F5F5F5; --accent:#2563EB; --muted:#6b7280; --line:#e5e7eb; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:Inter,sans-serif; color:var(--ink); font-size:13px; line-height:1.7; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page { width:210mm; min-height:297mm; margin:0 auto; padding:16mm 18mm; page-break-after:always; }
+  .page:last-child { page-break-after:auto; }
+  h1,h2,h3.big { font-family:"Playfair Display",serif; }
+  .cover { background:var(--ink); color:#fff; display:flex; flex-direction:column; justify-content:space-between; }
+  .cover .brand { font-family:"Playfair Display",serif; font-size:22px; font-weight:700; }
+  .cover .brand span { color:var(--accent); }
+  .cover h1 { font-size:52px; line-height:1.15; color:#fff; }
+  .cover .accentbar { width:80px; height:5px; background:var(--accent); margin:24px 0; }
+  .cover .mid p { color:#9ca3af; font-size:16px; max-width:70%; }
+  .cover .bottom { color:#9ca3af; font-size:12px; display:flex; justify-content:space-between; }
+  .head-inner { display:flex; justify-content:space-between; border-bottom:2px solid var(--ink); padding-bottom:12px; font-size:12px; color:var(--muted); margin-bottom:8px; }
+  .head-inner b { font-family:"Playfair Display",serif; font-size:15px; color:var(--ink); }
+  .head-inner b span { color:var(--accent); }
+  .sec-tag { font-size:11px; text-transform:uppercase; letter-spacing:2px; color:var(--accent); font-weight:700; margin-top:22px; }
+  h2 { font-size:24px; margin:4px 0 8px; }
+  p.lead { color:var(--muted); }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:12px; }
+  .grid3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin-top:12px; }
+  .card { background:var(--bg); border-left:3px solid var(--accent); padding:14px 16px; }
+  .card strong { display:block; margin-bottom:3px; }
+  .card p, .card li { font-size:12px; color:var(--muted); }
+  .card ul { padding-left:16px; margin-top:4px; }
+  .dark { background:var(--ink); color:#fff; border:none; }
+  .dark strong { color:#fff; }
+  .dark p { color:#9ca3af; }
+  .step { display:flex; gap:12px; margin-top:10px; align-items:flex-start; }
+  .step .n { background:var(--accent); color:#fff; width:26px; height:26px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:12px; flex-shrink:0; margin-top:2px; }
+  .chip { display:inline-block; background:var(--bg); border:1px solid var(--line); border-radius:999px; padding:4px 12px; font-size:11.5px; margin:3px 3px 0 0; }
+  .foot { margin-top:28px; padding-top:14px; border-top:1px solid var(--line); color:var(--muted); font-size:11px; display:flex; justify-content:space-between; }
+  @page { size:A4; margin:0; }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="page cover">
+  <div class="brand">Studio<span>Website</span></div>
+  <div class="mid">
+    <p style="letter-spacing:3px; text-transform:uppercase; font-size:12px; color:var(--accent); font-weight:700">Company Profile 2026</p>
+    <h1>Build Better<br />Digital Presence.</h1>
+    <div class="accentbar"></div>
+    <p>Website • Automation • Digital Solution — kami membantu bisnis berkembang melalui teknologi.</p>
+  </div>
+  <div class="bottom">
+    <span>binsar16febuary@gmail.com · +62 812-3456-7890</span>
+    <span>[link-website-anda.com]</span>
+  </div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+  <div class="head-inner"><b>Studio<span>Website</span></b><span>Company Profile</span></div>
+
+  <p class="sec-tag">Tentang Kami</p>
+  <h2>Bukan Sekadar Membuat Website</h2>
+  <p class="lead">Studio Website adalah studio digital yang membantu UMKM, startup, personal brand, dan bisnis lokal memiliki website profesional, sistem digital, dan AI automation yang benar-benar membantu operasional. Kami percaya website yang baik bukan hanya indah — tapi cepat, mudah ditemukan di Google, dan menghasilkan pelanggan.</p>
+
+  <div class="grid2" style="margin-top:16px">
+    <div class="card dark"><strong>Visi</strong><p>Menjadi partner teknologi bagi bisnis — bukan sekadar jasa pembuatan website.</p></div>
+    <div class="card dark"><strong>Misi</strong><p>Website cepat, design premium, harga transparan, proses mudah, dan support yang baik.</p></div>
+  </div>
+
+  <p class="sec-tag">Layanan</p>
+  <h2>Apa yang Kami Kerjakan</h2>
+  <div class="grid2">
+    <div class="card"><strong>Landing Page — Rp2.500.000</strong><p>1 halaman fokus konversi untuk personal brand, event, produk, dan UMKM.</p></div>
+    <div class="card"><strong>Company Profile — Rp5.000.000</strong><p>Website 5–8 halaman untuk company, klinik, restaurant, property, dan travel.</p></div>
+    <div class="card"><strong>Custom Web App — mulai Rp10.000.000</strong><p>Dashboard, CRM, booking system, inventory, dan sistem internal.</p></div>
+    <div class="card"><strong>AI Automation — by requirement</strong><p>WhatsApp automation, email automation, n8n workflow, chatbot AI.</p></div>
+  </div>
+
+  <p class="sec-tag">Teknologi</p>
+  <h2>Stack Modern &amp; Teruji</h2>
+  <div>
+    <span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">TailwindCSS</span><span class="chip">Node.js</span><span class="chip">PostgreSQL</span><span class="chip">Prisma</span><span class="chip">Vercel</span><span class="chip">n8n</span><span class="chip">OpenAI</span><span class="chip">Claude API</span><span class="chip">Gemini API</span>
+  </div>
+
+  <div class="foot"><span>Studio Website — Company Profile</span><span>Hal. 2</span></div>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page">
+  <div class="head-inner"><b>Studio<span>Website</span></b><span>Company Profile</span></div>
+
+  <p class="sec-tag">Cara Kerja</p>
+  <h2>Proses yang Jelas dari Awal</h2>
+  <div class="step"><div class="n">1</div><div><strong>Konsultasi &amp; Quotation</strong> — diskusi kebutuhan, lalu penawaran tertulis yang transparan.</div></div>
+  <div class="step"><div class="n">2</div><div><strong>DP 50% &amp; Requirement</strong> — pengumpulan materi dan penetapan timeline.</div></div>
+  <div class="step"><div class="n">3</div><div><strong>Design &amp; Development</strong> — pengerjaan 10 hari kerja dengan update progres.</div></div>
+  <div class="step"><div class="n">4</div><div><strong>Revisi &amp; Testing</strong> — penyempurnaan sampai Anda puas, uji di semua perangkat.</div></div>
+  <div class="step"><div class="n">5</div><div><strong>Launch &amp; Support</strong> — deploy ke domain Anda + support gratis 1 bulan.</div></div>
+
+  <p class="sec-tag">Portfolio</p>
+  <h2>Industri yang Pernah Kami Kerjakan</h2>
+  <div class="grid3">
+    <div class="card"><strong>☕ Coffee Shop</strong><p>Kopi Senja — menu digital &amp; reservasi</p></div>
+    <div class="card"><strong>🍛 Restaurant</strong><p>Rasa Nusantara — reservasi &amp; private dining</p></div>
+    <div class="card"><strong>🏠 Property</strong><p>Griya Land — listing unit &amp; lead form</p></div>
+    <div class="card"><strong>🌊 Travel</strong><p>Jelajah Trip — paket tour &amp; booking</p></div>
+    <div class="card"><strong>⚡ Gym</strong><p>Forge Fitness — membership &amp; free trial</p></div>
+    <div class="card"><strong>🦷 Dental Clinic</strong><p>Smile Dental — layanan &amp; appointment</p></div>
+    <div class="card"><strong>💈 Barbershop</strong><p>Crown Barber — price list &amp; booking</p></div>
+    <div class="card"><strong>⚖️ Law Firm</strong><p>Adhikara Law — practice area &amp; konsultasi</p></div>
+    <div class="card"><strong>◆ Interior &amp; SaaS</strong><p>Ruang Studio &amp; Alurin</p></div>
+  </div>
+  <p style="margin-top:8px; font-size:12px; color:var(--muted)">Demo live seluruh portfolio: <strong style="color:var(--accent)">[link-portfolio-anda.com]</strong></p>
+
+  <p class="sec-tag">Kontak</p>
+  <h2>Mari Berdiskusi</h2>
+  <div class="card dark" style="display:flex; justify-content:space-between; align-items:center">
+    <div><strong style="font-size:15px">Konsultasi gratis — tanpa komitmen.</strong><p>Ceritakan kebutuhan bisnis Anda, kami rekomendasikan solusinya.</p></div>
+    <div style="text-align:right; font-size:12.5px; color:#9ca3af">+62 812-3456-7890<br />binsar16febuary@gmail.com</div>
+  </div>
+
+  <div class="foot"><span>Studio Website — Build Better Digital Presence.</span><span>Hal. 3</span></div>
+</div>
+</body>
+</html>
