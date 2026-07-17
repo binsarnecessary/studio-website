@@ -1,0 +1,7 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="96" fill="#f6f4ef" stroke="#1f2430" stroke-width="4" />
+  <text x="100" y="96" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-weight="700" letter-spacing="4" fill="#1f2430">SW</text>
+  <line x1="52" y1="120" x2="80" y2="120" stroke="#1f2430" stroke-width="3" />
+  <line x1="120" y1="120" x2="148" y2="120" stroke="#1f2430" stroke-width="3" />
+  <text x="100" y="140" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="600" letter-spacing="3" fill="#1f2430">WEB</text>
+</svg>

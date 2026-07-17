@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import SectionHeading from "@/components/SectionHeading";
 import CTASection from "@/components/CTASection";
+import PortfolioShowcase from "@/components/PortfolioShowcase";
 import { portfolio } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -12,40 +12,23 @@ export const metadata: Metadata = {
 export default function PortfolioPage() {
   return (
     <>
-      <section className="py-20">
-        <div className="mx-auto max-w-6xl px-4">
-          <SectionHeading
-            eyebrow="Portfolio"
-            title="Project yang Sudah Kami Bangun"
-            description="Setiap project memiliki brand identity, responsive design, SEO, dan semua elemen production ready."
-          />
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {portfolio.map((p) => (
-              <a
-                key={p.slug}
-                href={p.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group overflow-hidden rounded-2xl border border-neutral-200 transition-shadow hover:shadow-lg"
-              >
-                <div className="flex h-48 items-center justify-center bg-gradient-to-br from-primary to-neutral-700">
-                  <span className="font-heading text-2xl font-bold text-white">
-                    {p.title}
-                  </span>
-                </div>
-                <div className="p-6">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-accent">
-                    {p.category}
-                  </p>
-                  <h3 className="mt-1 font-bold">{p.title}</h3>
-                  <p className="mt-2 text-sm text-neutral-600">{p.description}</p>
-                  <span className="mt-4 inline-block text-sm font-medium text-accent group-hover:underline">
-                    Lihat demo live →
-                  </span>
-                </div>
-              </a>
-            ))}
+      <section className="border-b border-line">
+        <div className="mx-auto max-w-6xl px-6 py-20 md:px-8 md:py-28">
+          <div className="mb-12 max-w-2xl">
+            <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.24em] text-stone">
+              Portfolio
+            </p>
+            <h1 className="font-heading text-4xl font-semibold tracking-tight md:text-6xl">
+              Project yang sudah kami bangun
+            </h1>
+            <p className="mt-5 font-prose text-lg text-neutral-600 md:text-xl">
+              Setiap project memiliki brand identity, responsive design, SEO, dan
+              semua elemen production ready. Klik <strong>Lihat</strong> untuk
+              melihat langsung di sini, atau <strong>Kunjungi</strong> untuk
+              membuka situsnya.
+            </p>
           </div>
+          <PortfolioShowcase items={portfolio} variant="grid" />
         </div>
       </section>
       <CTASection />

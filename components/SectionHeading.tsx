@@ -18,7 +18,7 @@ export default function SectionHeading({
       )}
       <h2 className="text-3xl font-bold md:text-4xl">{title}</h2>
       {description && (
-        <p className="mt-4 text-neutral-600">{description}</p>
+        <p className="mt-4 font-prose text-lg text-neutral-600 md:text-xl">{description}</p>
       )}
     </div>
   );

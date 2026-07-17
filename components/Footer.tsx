@@ -1,14 +1,18 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
+import Logo from "@/components/Logo";
 
 export default function Footer() {
   return (
     <footer className="bg-primary text-neutral-300">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-4">
         <div>
-          <p className="font-heading text-xl font-bold text-white">
-            Studio<span className="text-accent">Website</span>
-          </p>
+          <div className="flex items-center gap-2.5">
+            <Logo className="h-11 w-11" />
+            <p className="font-heading text-xl font-bold text-white">
+              Studio<span className="text-accent">Website</span>
+            </p>
+          </div>
           <p className="mt-3 text-sm leading-relaxed">
             {site.tagline}
             <br />

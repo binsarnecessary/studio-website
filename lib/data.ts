@@ -8,8 +8,22 @@ export type Service = {
 
 export const services: Service[] = [
   {
+    slug: "landing-page-statis",
+    title: "Landing Page Statis",
+    description:
+      "Satu halaman statis yang cepat dan hemat — cocok untuk UMKM, personal brand, atau event yang butuh tampil online dengan cepat.",
+    features: [
+      "1 halaman statis (HTML/Next.js)",
+      "Design rapi & mobile friendly",
+      "Tombol WhatsApp & Google Maps",
+      "SEO dasar",
+      "Deploy gratis (Vercel)",
+    ],
+    price: "Mulai Rp500.000",
+  },
+  {
     slug: "landing-page",
-    title: "Landing Page",
+    title: "Landing Page Pro",
     description:
       "Landing page cepat, modern, dan fokus konversi untuk personal brand, event, produk, dan UMKM.",
     features: [
@@ -67,16 +81,30 @@ export const services: Service[] = [
 
 export const pricing = [
   {
-    name: "Landing Page",
+    name: "Landing Page Statis",
+    price: "Rp500.000",
+    unit: "mulai dari",
+    popular: false,
+    features: [
+      "1 halaman statis",
+      "Design rapi & mobile friendly",
+      "Tombol WhatsApp & Maps",
+      "SEO dasar",
+      "Deploy gratis (Vercel)",
+      "Revisi 1x",
+    ],
+  },
+  {
+    name: "Landing Page Pro",
     price: "Rp2.500.000",
     unit: "sekali bayar",
     popular: false,
     features: [
       "1 halaman fokus konversi",
-      "Design premium",
+      "Design premium custom",
       "Responsive semua device",
       "SEO friendly",
-      "WhatsApp CTA",
+      "WhatsApp CTA + animasi",
       "Deploy & domain setup",
     ],
   },
