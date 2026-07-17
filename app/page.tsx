@@ -89,7 +89,7 @@ export default function HomePage() {
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {portfolio.slice(0, 6).map((p) => (
-              <div key={p.slug} className="overflow-hidden rounded-2xl bg-white shadow-sm transition-shadow hover:shadow-lg">
+              <a key={p.slug} href={p.url} target="_blank" rel="noopener noreferrer" className="group overflow-hidden rounded-2xl bg-white shadow-sm transition-shadow hover:shadow-lg">
                 <div className="flex h-44 items-center justify-center bg-gradient-to-br from-primary to-neutral-700">
                   <span className="font-heading text-2xl font-bold text-white">{p.title}</span>
                 </div>
@@ -97,8 +97,9 @@ export default function HomePage() {
                   <p className="text-xs font-semibold uppercase tracking-wider text-accent">{p.category}</p>
                   <h3 className="mt-1 font-bold">{p.title}</h3>
                   <p className="mt-2 text-sm text-neutral-600">{p.description}</p>
+                  <span className="mt-4 inline-block text-sm font-medium text-accent group-hover:underline">Lihat demo live →</span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
           <div className="mt-10 text-center">
@@ -145,15 +146,4 @@ export default function HomePage() {
                 </blockquote>
                 <figcaption className="mt-5">
                   <p className="font-semibold">{t.name}</p>
-                  <p className="text-xs text-neutral-500">{t.role}</p>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <CTASection />
-    </>
-  );
-}
+                  <p className="tex

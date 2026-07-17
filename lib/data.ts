@@ -125,16 +125,16 @@ export const pricing = [
 ];
 
 export const portfolio = [
-  { slug: "coffee-shop", title: "Kopi Senja", category: "Coffee Shop", description: "Website coffee shop dengan menu digital, gallery, dan reservasi via WhatsApp." },
-  { slug: "restaurant", title: "Rasa Nusantara", category: "Restaurant", description: "Company profile restaurant dengan menu, reservasi online, dan lokasi cabang." },
-  { slug: "property", title: "Griya Land", category: "Property", description: "Website listing property dengan katalog unit, brosur digital, dan lead form." },
-  { slug: "travel", title: "Jelajah Trip", category: "Travel", description: "Website travel agency dengan paket tour, itinerary, dan booking online." },
-  { slug: "gym", title: "Forge Fitness", category: "Gym", description: "Landing page gym dengan jadwal kelas, membership pricing, dan free trial CTA." },
-  { slug: "dental-clinic", title: "Smile Dental", category: "Dental Clinic", description: "Website klinik gigi dengan layanan, dokter, dan booking appointment." },
-  { slug: "barbershop", title: "Crown Barber", category: "Barbershop", description: "Landing page barbershop dengan price list, gallery, dan booking WhatsApp." },
-  { slug: "law-firm", title: "Adhikara Law", category: "Law Firm", description: "Company profile firma hukum dengan practice area dan konsultasi online." },
-  { slug: "interior-design", title: "Ruang Studio", category: "Interior Design", description: "Portfolio interior design dengan project showcase dan konsultasi desain." },
-  { slug: "saas", title: "Alurin", category: "SaaS", description: "Landing page SaaS dengan fitur produk, pricing tiers, dan demo request." },
+  { slug: "coffee-shop", title: "Kopi Senja", category: "Coffee Shop", description: "Website coffee shop dengan menu digital, gallery, dan reservasi via WhatsApp.", url: "https://coffe-shop-three-lake.vercel.app" },
+  { slug: "restaurant", title: "Rasa Nusantara", category: "Restaurant", description: "Company profile restaurant dengan menu, reservasi online, dan lokasi cabang.", url: "https://my-restaurant-beryl.vercel.app" },
+  { slug: "property", title: "Griya Land", category: "Property", description: "Website listing property dengan katalog unit, brosur digital, dan lead form.", url: "https://property-taupe-five.vercel.app" },
+  { slug: "travel", title: "Jelajah Trip", category: "Travel", description: "Website travel agency dengan paket tour, itinerary, dan booking online.", url: "https://anywhere-travel.vercel.app" },
+  { slug: "gym", title: "Forge Fitness", category: "Gym", description: "Landing page gym dengan jadwal kelas, membership pricing, dan free trial CTA.", url: "https://gym-neon-theta.vercel.app" },
+  { slug: "dental-clinic", title: "Smile Dental", category: "Dental Clinic", description: "Website klinik gigi dengan layanan, dokter, dan booking appointment.", url: "https://clinic-seven-sooty.vercel.app" },
+  { slug: "barbershop", title: "Crown Barber", category: "Barbershop", description: "Landing page barbershop dengan price list, gallery, dan booking WhatsApp.", url: "https://barbershop-nine-rho.vercel.app" },
+  { slug: "law-firm", title: "Adhikara Law", category: "Law Firm", description: "Company profile firma hukum dengan practice area dan konsultasi online.", url: "https://lawfirm-opal-nine.vercel.app" },
+  { slug: "interior-design", title: "Ruang Studio", category: "Interior Design", description: "Portfolio interior design dengan project showcase dan konsultasi desain.", url: "https://interior-dessign.vercel.app" },
+  { slug: "saas", title: "Alurin", category: "SaaS", description: "Landing page SaaS dengan fitur produk, pricing tiers, dan demo request.", url: "https://do-with-saas.vercel.app" },
 ];
 
 export const testimonials = [
@@ -196,25 +196,3 @@ export const blogPosts = [
     category: "Website",
     date: "2026-06-20",
     excerpt: "Keduanya berbeda tujuan. Panduan singkat memilih jenis website yang tepat untuk bisnis Anda.",
-  },
-  {
-    slug: "ai-automation-untuk-umkm",
-    title: "AI Automation untuk UMKM: Mulai dari WhatsApp",
-    category: "Automation",
-    date: "2026-06-25",
-    excerpt: "Cara UMKM menghemat jam kerja setiap hari dengan WhatsApp automation dan chatbot AI.",
-  },
-];
-
-export const clientFlow = [
-  "Discovery",
-  "Konsultasi",
-  "Quotation",
-  "DP 50%",
-  "Design",
-  "Development",
-  "Revision",
-  "Deployment",
-  "Pelunasan",
-  "Maintenance",
-];

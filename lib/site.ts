@@ -6,7 +6,7 @@ export const site = {
     "Studio digital yang membantu bisnis memiliki website profesional, sistem digital, dan AI Automation. Website cepat, design premium, harga transparan.",
   url: "https://studiowebsite.id",
   email: "binsar16febuary@gmail.com",
-  whatsapp: "6281234567890", // TODO: ganti dengan nomor WhatsApp asli
+  whatsapp: "6287830377139", // TODO: ganti dengan nomor WhatsApp asli
   socials: {
     tiktok: "https://tiktok.com/@studiowebsite",
     instagram: "https://instagram.com/studiowebsite",

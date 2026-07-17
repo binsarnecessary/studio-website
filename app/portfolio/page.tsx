@@ -21,9 +21,12 @@ export default function PortfolioPage() {
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {portfolio.map((p) => (
-              <div
+              <a
                 key={p.slug}
-                className="overflow-hidden rounded-2xl border border-neutral-200 transition-shadow hover:shadow-lg"
+                href={p.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group overflow-hidden rounded-2xl border border-neutral-200 transition-shadow hover:shadow-lg"
               >
                 <div className="flex h-48 items-center justify-center bg-gradient-to-br from-primary to-neutral-700">
                   <span className="font-heading text-2xl font-bold text-white">
@@ -36,13 +39,4 @@ export default function PortfolioPage() {
                   </p>
                   <h3 className="mt-1 font-bold">{p.title}</h3>
                   <p className="mt-2 text-sm text-neutral-600">{p.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <CTASection />
-    </>
-  );
-}
+                  <span className="mt-
