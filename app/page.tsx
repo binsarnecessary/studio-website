@@ -146,4 +146,15 @@ export default function HomePage() {
                 </blockquote>
                 <figcaption className="mt-5">
                   <p className="font-semibold">{t.name}</p>
-                  <p className="tex
+                  <p className="text-xs text-neutral-500">{t.role}</p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <CTASection />
+    </>
+  );
+}

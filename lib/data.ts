@@ -196,3 +196,25 @@ export const blogPosts = [
     category: "Website",
     date: "2026-06-20",
     excerpt: "Keduanya berbeda tujuan. Panduan singkat memilih jenis website yang tepat untuk bisnis Anda.",
+  },
+  {
+    slug: "ai-automation-untuk-umkm",
+    title: "AI Automation untuk UMKM: Mulai dari WhatsApp",
+    category: "Automation",
+    date: "2026-06-25",
+    excerpt: "Cara UMKM menghemat jam kerja setiap hari dengan WhatsApp automation dan chatbot AI.",
+  },
+];
+
+export const clientFlow = [
+  "Discovery",
+  "Konsultasi",
+  "Quotation",
+  "DP 50%",
+  "Design",
+  "Development",
+  "Revision",
+  "Deployment",
+  "Pelunasan",
+  "Maintenance",
+];

@@ -39,4 +39,16 @@ export default function PortfolioPage() {
                   </p>
                   <h3 className="mt-1 font-bold">{p.title}</h3>
                   <p className="mt-2 text-sm text-neutral-600">{p.description}</p>
-                  <span className="mt-
+                  <span className="mt-4 inline-block text-sm font-medium text-accent group-hover:underline">
+                    Lihat demo live →
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+      <CTASection />
+    </>
+  );
+}
