@@ -163,6 +163,10 @@ export const portfolio = [
   { slug: "law-firm", title: "Adhikara Law", category: "Law Firm", description: "Company profile firma hukum dengan practice area dan konsultasi online.", url: "https://lawfirm-opal-nine.vercel.app" },
   { slug: "interior-design", title: "Ruang Studio", category: "Interior Design", description: "Portfolio interior design dengan project showcase dan konsultasi desain.", url: "https://interior-dessign.vercel.app" },
   { slug: "saas", title: "Alurin", category: "SaaS", description: "Landing page SaaS dengan fitur produk, pricing tiers, dan demo request.", url: "https://do-with-saas.vercel.app" },
+  { slug: "real-estate", title: "Real Estate", category: "Company Profile", description: "Company profile agen real estate dengan listing properti, tim, dan lead form.", url: "https://company-real-estate.vercel.app" },
+  { slug: "ecommerce", title: "Toko Baju", category: "E-Commerce", description: "Toko online fashion dengan katalog produk, keranjang, dan checkout.", url: "https://tokobaju-fe.vercel.app" },
+  { slug: "lms", title: "LMS", category: "Web App", description: "Learning Management System dengan katalog kursus, materi, dan progres belajar.", url: "https://fe-lms-ashy.vercel.app" },
+  { slug: "crm", title: "CRM", category: "Web App", description: "Dashboard CRM untuk kelola lead, pipeline, dan aktivitas sales.", url: "https://crm-fe-bw9a.vercel.app" },
 ];
 
 export const testimonials = [

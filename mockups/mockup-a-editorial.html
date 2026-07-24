@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Studio Website — Mockup A: Editorial Premium</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#141414; --paper:#ffffff; --cream:#f6f4ef; --line:#e6e2da;
+    --muted:#7a756c; --accent:#2563eb;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Inter",sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.serif{font-family:"Playfair Display",serif;font-weight:600;line-height:1.1}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+  a{color:inherit;text-decoration:none}
+  .eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);font-weight:600}
+
+  /* nav */
+  nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+  .logo{font-family:"Playfair Display",serif;font-size:24px;font-weight:700;letter-spacing:-.01em}
+  .logo em{font-style:italic;color:var(--accent)}
+  .navlinks{display:flex;gap:38px;font-size:14px;color:#3d3a34}
+  .navlinks a:hover{color:var(--accent)}
+  .navbtn{border:1px solid var(--ink);border-radius:100px;padding:11px 22px;font-size:13px;font-weight:600;transition:.25s}
+  .navbtn:hover{background:var(--ink);color:#fff}
+
+  /* hero */
+  .hero{padding:90px 0 70px;border-bottom:1px solid var(--line)}
+  .hero .eyebrow{margin-bottom:26px}
+  .hero h1{font-size:clamp(46px,8vw,104px);letter-spacing:-.02em}
+  .hero h1 .it{font-style:italic;font-weight:500}
+  .hero-row{display:flex;justify-content:space-between;align-items:flex-end;gap:48px;margin-top:40px;flex-wrap:wrap}
+  .hero-lead{max-width:420px;color:#4a463f;font-size:17px}
+  .hero-cta{display:flex;gap:14px;align-items:center}
+  .btn-fill{background:var(--accent);color:#fff;border-radius:100px;padding:15px 30px;font-size:14px;font-weight:600;transition:.25s}
+  .btn-fill:hover{background:#1d4ed8;transform:translateY(-2px)}
+  .btn-text{font-size:14px;font-weight:600;border-bottom:1.5px solid var(--ink);padding-bottom:3px}
+  .marquee{margin-top:64px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0;display:flex;gap:52px;flex-wrap:wrap;color:var(--muted);font-size:13px;letter-spacing:.04em}
+  .marquee span b{color:var(--ink);font-weight:600}
+
+  /* section head */
+  .shead{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:52px;flex-wrap:wrap}
+  .shead h2{font-size:clamp(30px,4.4vw,52px);letter-spacing:-.015em;max-width:16ch}
+  section{padding:96px 0}
+
+  /* services */
+  .svc{border-top:1px solid var(--line)}
+  .svc-row{display:grid;grid-template-columns:64px 1fr auto;gap:28px;align-items:center;padding:34px 0;border-bottom:1px solid var(--line);transition:.3s}
+  .svc-row:hover{padding-left:14px;background:var(--cream)}
+  .svc-num{font-family:"Playfair Display",serif;font-style:italic;font-size:22px;color:var(--muted)}
+  .svc-row h3{font-size:clamp(22px,3vw,32px);font-weight:600}
+  .svc-row p{color:var(--muted);font-size:15px;margin-top:6px;max-width:52ch}
+  .svc-price{font-size:15px;font-weight:600;white-space:nowrap;color:var(--accent)}
+
+  /* portfolio */
+  .port{background:var(--cream)}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:36px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.35s;display:block}
+  .card:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(20,20,20,.12)}
+  .thumb{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--cream);border-bottom:1px solid var(--line)}
+  .thumb iframe{position:absolute;top:0;left:0;width:1440px;height:900px;border:0;transform:scale(.3833);transform-origin:top left;pointer-events:none}
+  .thumb .veil{position:absolute;inset:0;z-index:2}
+  .thumb .go{position:absolute;right:14px;bottom:14px;z-index:3;background:#fff;border:1px solid var(--line);border-radius:100px;font-size:12px;font-weight:600;padding:8px 14px;display:flex;align-items:center;gap:6px;opacity:0;transform:translateY(6px);transition:.3s}
+  .card:hover .go{opacity:1;transform:translateY(0)}
+  .cbody{padding:22px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .cbody h3{font-size:21px;font-weight:600}
+  .cbody .cat{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+  .cbody .arrow{font-family:"Playfair Display",serif;font-size:24px;color:var(--accent)}
+
+  /* cta */
+  .cta{background:var(--ink);color:#fff;text-align:center}
+  .cta h2{font-size:clamp(34px,5.5vw,72px);letter-spacing:-.02em;max-width:16ch;margin:0 auto}
+  .cta h2 .it{font-style:italic;font-weight:500;color:#93b4ff}
+  .cta p{color:#a7a29a;margin:26px auto 0;max-width:46ch}
+  .cta .btn-fill{margin-top:40px;display:inline-block}
+
+  footer{background:var(--ink);color:#8f8a82;border-top:1px solid #2a2a2a;padding:40px 0;font-size:13px}
+  .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+  footer a:hover{color:#fff}
+
+  @media(max-width:760px){
+    .navlinks{display:none}
+    .grid{grid-template-columns:1fr}
+    .svc-row{grid-template-columns:auto 1fr;gap:16px}
+    .svc-price{grid-column:2;justify-self:start}
+    .thumb iframe{transform:scale(.32)}
+  }
+</style>
+</head>
+<body>
+<nav><div class="wrap nav">
+  <div class="logo">Studio<em>Website</em></div>
+  <div class="navlinks"><a href="#services">Services</a><a href="#work">Portfolio</a><a href="#">Pricing</a><a href="#">About</a></div>
+  <a href="#" class="navbtn">Konsultasi Gratis</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <p class="eyebrow">Website · Automation · Digital Solution</p>
+  <h1>Build better<br><span class="it">digital</span> presence.</h1>
+  <div class="hero-row">
+    <p class="hero-lead">Studio digital yang membantu bisnis memiliki website profesional, sistem digital, dan AI automation — yang benar-benar membantu operasional.</p>
+    <div class="hero-cta">
+      <a href="#work" class="btn-fill">Lihat Karya Kami</a>
+      <a href="#" class="btn-text">Konsultasi →</a>
+    </div>
+  </div>
+  <div class="marquee">
+    <span><b>10+</b> Project Selesai</span>
+    <span><b>90+</b> Skor Lighthouse</span>
+    <span><b>10 Hari</b> Rata-rata Pengerjaan</span>
+    <span><b>Next.js</b> · TypeScript · Tailwind</span>
+  </div>
+</div></header>
+
+<section class="svc" id="services"><div class="wrap">
+  <div class="shead">
+    <h2>Solusi digital untuk bisnis Anda</h2>
+    <p class="eyebrow">01 — Services</p>
+  </div>
+  <div>
+    <div class="svc-row"><span class="svc-num">i</span><div><h3>Landing Page</h3><p>Satu halaman fokus konversi untuk personal brand, event, produk, dan UMKM.</p></div><span class="svc-price">Rp2.500.000</span></div>
+    <div class="svc-row"><span class="svc-num">ii</span><div><h3>Company Profile</h3><p>Website 5–8 halaman untuk company, klinik, restaurant, property, dan travel.</p></div><span class="svc-price">Rp5.000.000</span></div>
+    <div class="svc-row"><span class="svc-num">iii</span><div><h3>Custom Web App</h3><p>Dashboard, CRM, booking system, inventory, dan sistem internal.</p></div><span class="svc-price">Mulai Rp10.000.000</span></div>
+    <div class="svc-row"><span class="svc-num">iv</span><div><h3>AI Automation</h3><p>WhatsApp automation, chatbot AI, n8n workflow, dan lead automation.</p></div><span class="svc-price">By Requirement</span></div>
+  </div>
+</div></section>
+
+<section class="port" id="work"><div class="wrap">
+  <div class="shead">
+    <h2>Karya terbaru kami</h2>
+    <p class="eyebrow">02 — Selected Work</p>
+  </div>
+  <div class="grid">
+    <a class="card" href="https://coffe-shop-three-lake.vercel.app" target="_blank" rel="noopener"><div class="thumb"><iframe src="https://coffe-shop-three-lake.vercel.app" scrolling="no" tabindex="-1" title="Kopi Senja"></iframe><div class="veil"></div><span class="go">Kunjungi situs ↗</span></div><div class="cbody"><div><h3>Kopi Senja</h3><p class="cat">Coffee Shop</p></div><span class="arrow">↗</span></div></a>
+    <a class="card" href="https://my-restaurant-beryl.vercel.app" target="_blank" rel="noopener"><div class="thumb"><iframe src="https://my-restaurant-beryl.vercel.app" scrolling="no" tabindex="-1" title="Rasa Nusantara"></iframe><div class="veil"></div><span class="go">Kunjungi situs ↗</span></div><div class="cbody"><div><h3>Rasa Nusantara</h3><p class="cat">Restaurant</p></div><span class="arrow">↗</span></div></a>
+    <a class="card" href="https://property-taupe-five.vercel.app" target="_blank" rel="noopener"><div class="thumb"><iframe src="https://property-taupe-five.vercel.app" scrolling="no" tabindex="-1" title="Griya Land"></iframe><div class="veil"></div><span class="go">Kunjungi situs ↗</span></div><div class="cbody"><div><h3>Griya Land</h3><p class="cat">Property</p></div><span class="arrow">↗</span></div></a>
+    <a class="card" href="https://anywhere-travel.vercel.app" target="_blank" rel="noopener"><div class="thumb"><iframe src="https://anywhere-travel.vercel.app" scrolling="no" tabindex="-1" title="Jelajah Trip"></iframe><div class="veil"></div><span class="go">Kunjungi situs ↗</span></div><div class="cbody"><div><h3>Jelajah Trip</h3><p class="cat">Travel</p></div><span class="arrow">↗</span></div></a>
+    <a class="card" href="https://gym-neon-theta.vercel.app" target="_blank" rel="noopener"><div class="thumb"><iframe src="https://gym-neon-theta.vercel.app" scrolling="no" tabindex="-1" title="Forge Fitness"></iframe><div class="veil"></div><span class="go">Kunjungi situs ↗</span></div><div class="cbody"><div><h3>Forge Fitness</h3><p class="cat">Gym</p></div><span class="arrow">↗</span></div></a>
+    <a class="card" href="https://clinic-seven-sooty.vercel.app" target="_blank" rel="noopener"><div class="thumb"><iframe src="https://clinic-seven-sooty.vercel.app" scrolling="no" tabindex="-1" title="Smile Dental"></iframe><div class="veil"></div><span class="go">Kunjungi situs ↗</span></div><div class="cbody"><div><h3>Smile Dental</h3><p class="cat">Dental Clinic</p></div><span class="arrow">↗</span></div></a>
+    <a class="card" href="https://barbershop-nine-rho.vercel.app" target="_blank" rel="noopener"><div class="thumb"><iframe src="https://barbershop-nine-rho.vercel.app" scrolling="no" tabindex="-1" title="Crown Barber"></iframe><div class="veil"></div><span class="go">Kunjungi situs ↗</span></div><div class="cbody"><div><h3>Crown Barber</h3><p class="cat">Barbershop</p></div><span class="arrow">↗</span></div></a>
+    <a class="card" href="https://lawfirm-opal-nine.vercel.app" target="_blank" rel="noopener"><div class="thumb"><iframe src="https://lawfirm-opal-nine.vercel.app" scrolling="no" tabindex="-1" title="Adhikara Law"></iframe><div class="veil"></div><span class="go">Kunjungi situs ↗</span></div><div class="cbody"><div><h3>Adhikara Law</h3><p class="cat">Law Firm</p></div><span class="arrow">↗</span></div></a>
+    <a class="card" href="https://interior-dessign.vercel.app" target="_blank" rel="noopener"><div class="thumb"><iframe src="https://interior-dessign.vercel.app" scrolling="no" tabindex="-1" title="Ruang Studio"></iframe><div class="veil"></div><span class="go">Kunjungi situs ↗</span></div><div class="cbody"><div><h3>Ruang Studio</h3><p class="cat">Interior Design</p></div><span class="arrow">↗</span></div></a>
+    <a class="card" href="https://do-with-saas.vercel.app" target="_blank" rel="noopener"><div class="thumb"><iframe src="https://do-with-saas.vercel.app" scrolling="no" tabindex="-1" title="Alurin"></iframe><div class="veil"></div><span class="go">Kunjungi situs ↗</span></div><div class="cbody"><div><h3>Alurin</h3><p class="cat">SaaS</p></div><span class="arrow">↗</span></div></a>
+  </div>
+</div></section>
+
+<section class="cta"><div class="wrap">
+  <h2>Siap membangun <span class="it">presence</span> yang lebih baik?</h2>
+  <p>Konsultasi gratis. Ceritakan kebutuhan bisnis Anda, kami bantu rekomendasikan solusi yang tepat — tanpa komitmen.</p>
+  <a href="https://wa.me/6287830377139" class="btn-fill">Konsultasi via WhatsApp</a>
+</div></section>
+
+<footer><div class="wrap foot">
+  <span>© 2026 Studio Website — Build Better Digital Presence.</span>
+  <span><a href="#">Instagram</a> · <a href="#">TikTok</a> · <a href="#">LinkedIn</a></span>
+</div></footer>
+</body>
+</html>
