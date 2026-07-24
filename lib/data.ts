@@ -167,6 +167,7 @@ export const portfolio = [
   { slug: "ecommerce", title: "Toko Baju", category: "E-Commerce", description: "Toko online fashion dengan katalog produk, keranjang, dan checkout.", url: "https://tokobaju-fe.vercel.app" },
   { slug: "lms", title: "LMS", category: "Web App", description: "Learning Management System dengan katalog kursus, materi, dan progres belajar.", url: "https://fe-lms-ashy.vercel.app" },
   { slug: "crm", title: "CRM", category: "Web App", description: "Dashboard CRM untuk kelola lead, pipeline, dan aktivitas sales.", url: "https://crm-fe-bw9a.vercel.app" },
+  { slug: "game-edukasi", title: "Bank Kids", category: "Game Edukasi", description: "Game web edukasi finansial untuk anak — belajar menabung sambil bermain.", url: "https://bank-kids.vercel.app" },
 ];
 
 export const testimonials = [
