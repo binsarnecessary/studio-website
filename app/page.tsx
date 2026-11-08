@@ -1,6 +1,6 @@
 import Link from "next/link";
 import PortfolioShowcase from "@/components/PortfolioShowcase";
-import { services, portfolio, testimonials } from "@/lib/data";
+import { services, portfolio } from "@/lib/data";
 import { waLink } from "@/lib/site";
 
 const romanNum = ["i", "ii", "iii", "iv", "v", "vi"];
@@ -33,7 +33,7 @@ export default function HomePage() {
                 Lihat Karya Kami
               </Link>
               <a
-                href={waLink("Halo Studio Website, saya ingin konsultasi gratis.")}
+                href={waLink("Halo Ukirkode, saya ingin konsultasi gratis.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-b-2 border-primary pb-1 text-sm font-semibold transition-colors hover:text-accent hover:border-accent"
@@ -43,9 +43,9 @@ export default function HomePage() {
             </div>
           </div>
           <div className="mt-14 flex flex-wrap gap-x-10 gap-y-3 border-t border-line pt-6 text-[13px] text-stone">
-            <span><b className="font-semibold text-primary">10+</b> Project Selesai</span>
-            <span><b className="font-semibold text-primary">90+</b> Skor Lighthouse</span>
-            <span><b className="font-semibold text-primary">10 Hari</b> Rata-rata Pengerjaan</span>
+            <span><b className="font-semibold text-primary">{portfolio.length}</b> Karya Demo</span>
+            <span><b className="font-semibold text-primary">90+</b> Target Lighthouse</span>
+            <span><b className="font-semibold text-primary">10 Hari</b> Target Pengerjaan</span>
             <span><b className="font-semibold text-primary">Gratis</b> Konsultasi &amp; Revisi</span>
           </div>
         </div>
@@ -103,33 +103,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="border-t border-line">
-        <div className="mx-auto max-w-6xl px-6 py-20 md:px-8 md:py-28">
-          <div className="mb-12 flex items-end justify-between gap-6">
-            <h2 className="font-heading text-3xl font-semibold tracking-tight md:text-5xl">
-              Apa kata client kami
-            </h2>
-            <p className="hidden shrink-0 text-[11px] font-semibold uppercase tracking-[0.24em] text-stone md:block">
-              03 — Testimonial
-            </p>
-          </div>
-          <div className="grid gap-6 md:grid-cols-3">
-            {testimonials.map((t) => (
-              <figure key={t.name} className="rounded-2xl border border-line bg-white p-8">
-                <blockquote className="font-heading text-lg italic leading-relaxed text-neutral-800">
-                  “{t.text}”
-                </blockquote>
-                <figcaption className="mt-6">
-                  <p className="font-semibold">{t.name}</p>
-                  <p className="text-xs text-stone">{t.role}</p>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="bg-primary text-white">
         <div className="mx-auto max-w-3xl px-6 py-24 text-center md:px-8 md:py-32">
@@ -143,7 +116,7 @@ export default function HomePage() {
             rekomendasikan solusi yang tepat — tanpa komitmen.
           </p>
           <a
-            href={waLink("Halo Studio Website, saya ingin konsultasi gratis.")}
+            href={waLink("Halo Ukirkode, saya ingin konsultasi gratis.")}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-10 inline-block rounded-full bg-accent px-8 py-4 text-sm font-semibold transition-all hover:-translate-y-0.5 hover:bg-blue-700"

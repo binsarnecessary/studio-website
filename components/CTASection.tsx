@@ -14,7 +14,7 @@ export default function CTASection() {
         </p>
         <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
           <a
-            href={waLink("Halo Studio Website, saya ingin konsultasi gratis.")}
+            href={waLink("Halo Ukirkode, saya ingin konsultasi gratis.")}
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-accent px-8 py-3 font-medium transition-colors hover:bg-blue-700"

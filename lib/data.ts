@@ -170,24 +170,6 @@ export const portfolio = [
   { slug: "game-edukasi", title: "Bank Kids", category: "Game Edukasi", description: "Game web edukasi finansial untuk anak — belajar menabung sambil bermain.", url: "https://bank-kids.vercel.app" },
 ];
 
-export const testimonials = [
-  {
-    name: "Andi Pratama",
-    role: "Owner, Kopi Senja",
-    text: "Websitenya cepat banget dan designnya premium. Sejak launch, reservasi lewat WhatsApp naik signifikan.",
-  },
-  {
-    name: "Sarah Wijaya",
-    role: "Marketing, Griya Land",
-    text: "Prosesnya jelas dari awal: quotation transparan, timeline jelas, revisi cepat. Sangat profesional.",
-  },
-  {
-    name: "Budi Santoso",
-    role: "Founder, Jelajah Trip",
-    text: "Bukan cuma bikin website, tapi juga dibantu automation WhatsApp untuk booking. Operasional jadi jauh lebih ringan.",
-  },
-];
-
 export const faqs = [
   {
     q: "Berapa lama proses pembuatan website?",

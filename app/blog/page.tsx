@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   title: "Blog",
   description:
     "Artikel tentang website, AI, business, automation, technology, case study, dan tutorial.",
+  // noindex sampai ada artikel pertama
+  robots: { index: false, follow: true },
 };
 
 export default function BlogPage() {

@@ -32,7 +32,7 @@ export default function PricingPage() {
               >
                 {p.popular && (
                   <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent px-4 py-1 text-xs font-semibold text-white">
-                    Paling Populer
+                    Rekomendasi
                   </span>
                 )}
                 <h3 className="font-bold">{p.name}</h3>

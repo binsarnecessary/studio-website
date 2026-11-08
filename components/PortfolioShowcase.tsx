@@ -35,7 +35,7 @@ function Card({
       <div className="flex flex-1 items-end justify-between gap-4 px-6 py-5">
         <div>
           <p className="text-[11px] uppercase tracking-[0.14em] text-stone">
-            {p.category}
+            {p.category} · Demo
           </p>
           <h3 className="mt-1 font-heading text-xl font-semibold">{p.title}</h3>
         </div>
@@ -150,7 +150,7 @@ export default function PortfolioShowcase({
           >
             <div className="flex items-center justify-between gap-4 border-b border-line px-5 py-3.5">
               <div>
-                <p className="text-[11px] uppercase tracking-[0.14em] text-stone">{active.category}</p>
+                <p className="text-[11px] uppercase tracking-[0.14em] text-stone">{active.category} · Demo</p>
                 <h3 className="font-heading text-lg font-semibold">{active.title}</h3>
               </div>
               <div className="flex items-center gap-2">

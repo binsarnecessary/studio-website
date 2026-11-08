@@ -1,16 +1,14 @@
 export const site = {
-  name: "Studio Website",
+  name: "Ukirkode",
   tagline: "Build Better Digital Presence.",
   subTagline: "Website • Automation • Digital Solution",
   description:
     "Studio digital yang membantu bisnis memiliki website profesional, sistem digital, dan AI Automation. Website cepat, design premium, harga transparan.",
-  url: "https://studiowebsite.id",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://studio-website-snowy-ten.vercel.app",
   email: "binsar16febuary@gmail.com",
-  whatsapp: "6287830377139", // TODO: ganti dengan nomor WhatsApp asli
+  whatsapp: "6287830377139",
   socials: {
-    tiktok: "https://tiktok.com/@studiowebsite",
-    instagram: "https://instagram.com/studiowebsite",
-    linkedin: "https://linkedin.com/company/studiowebsite",
+    tiktok: "https://www.tiktok.com/@ukirkode",
   },
 };
 

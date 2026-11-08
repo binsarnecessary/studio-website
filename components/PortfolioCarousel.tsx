@@ -73,7 +73,7 @@ export default function PortfolioCarousel({ items }: { items: Item[] }) {
             <div className="flex items-center justify-between gap-4 px-6 py-5">
               <div>
                 <p className="text-[11px] uppercase tracking-[0.14em] text-stone">
-                  {p.category}
+                  {p.category} · Demo
                 </p>
                 <h3 className="mt-1 font-heading text-xl font-semibold">
                   {p.title}

@@ -1,18 +1,12 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
-import Logo from "@/components/Logo";
 
 export default function Footer() {
   return (
     <footer className="bg-primary text-neutral-300">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-4">
         <div>
-          <div className="flex items-center gap-2.5">
-            <Logo className="h-11 w-11" />
-            <p className="font-heading text-xl font-bold text-white">
-              Studio<span className="text-accent">Website</span>
-            </p>
-          </div>
+          <img src="/brand/ukirkode-wordmark-dark.svg" alt="Ukirkode" width={153} height={36} className="h-9 w-auto" />
           <p className="mt-3 text-sm leading-relaxed">
             {site.tagline}
             <br />
@@ -35,7 +29,6 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             <li><Link href="/about" className="hover:text-accent">About</Link></li>
             <li><Link href="/portfolio" className="hover:text-accent">Portfolio</Link></li>
-            <li><Link href="/blog" className="hover:text-accent">Blog</Link></li>
             <li><Link href="/faq" className="hover:text-accent">FAQ</Link></li>
             <li><Link href="/contact" className="hover:text-accent">Contact</Link></li>
           </ul>
@@ -45,8 +38,6 @@ export default function Footer() {
           <p className="mb-3 text-sm font-semibold text-white">Connect</p>
           <ul className="space-y-2 text-sm">
             <li><a href={site.socials.tiktok} target="_blank" rel="noopener noreferrer" className="hover:text-accent">TikTok</a></li>
-            <li><a href={site.socials.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-accent">Instagram</a></li>
-            <li><a href={site.socials.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-accent">LinkedIn</a></li>
             <li><a href={`mailto:${site.email}`} className="hover:text-accent">Email</a></li>
           </ul>
         </div>

@@ -6,7 +6,7 @@ import { faqs } from "@/lib/data";
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Pertanyaan yang sering diajukan tentang proses, harga, dan support pembuatan website di Studio Website.",
+    "Pertanyaan yang sering diajukan tentang proses, harga, dan support pembuatan website di Ukirkode.",
 };
 
 export default function FAQPage() {

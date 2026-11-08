@@ -3,7 +3,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Kebijakan privasi Studio Website.",
+  description: "Kebijakan privasi Ukirkode.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
 
         <div className="mt-8 space-y-6 text-sm leading-relaxed text-neutral-700">
           <p>
-            Studio Website menghargai privasi Anda. Halaman ini menjelaskan
+            Ukirkode menghargai privasi Anda. Halaman ini menjelaskan
             bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi
             Anda saat menggunakan website ini.
           </p>

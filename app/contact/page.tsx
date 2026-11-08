@@ -6,7 +6,7 @@ import { site, waLink } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Hubungi Studio Website untuk konsultasi gratis, website audit gratis, atau diskusi project Anda.",
+    "Hubungi Ukirkode untuk konsultasi gratis, website audit gratis, atau diskusi project Anda.",
 };
 
 export default function ContactPage() {
@@ -21,7 +21,7 @@ export default function ContactPage() {
         <div className="grid gap-10 md:grid-cols-2">
           <div className="space-y-6">
             <a
-              href={waLink("Halo Studio Website, saya ingin konsultasi gratis.")}
+              href={waLink("Halo Ukirkode, saya ingin konsultasi gratis.")}
               target="_blank"
               rel="noopener noreferrer"
               className="block rounded-2xl border border-neutral-200 p-6 transition-shadow hover:shadow-lg"

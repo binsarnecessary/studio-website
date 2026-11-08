@@ -3,7 +3,7 @@ import { waLink } from "@/lib/site";
 export default function WhatsAppFloat() {
   return (
     <a
-      href={waLink("Halo Studio Website, saya ingin konsultasi tentang pembuatan website.")}
+      href={waLink("Halo Ukirkode, saya ingin konsultasi tentang pembuatan website.")}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat via WhatsApp"

@@ -3,7 +3,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "Syarat dan ketentuan layanan Studio Website.",
+  description: "Syarat dan ketentuan layanan Ukirkode.",
 };
 
 export default function TermsPage() {
@@ -16,7 +16,7 @@ export default function TermsPage() {
         <div className="mt-8 space-y-6 text-sm leading-relaxed text-neutral-700">
           <h2 className="text-xl font-bold text-primary">1. Layanan</h2>
           <p>
-            Studio Website menyediakan jasa pembuatan landing page, company
+            Ukirkode menyediakan jasa pembuatan landing page, company
             profile website, custom web application, dan AI automation. Scope
             pekerjaan setiap project ditentukan dalam quotation yang disetujui
             kedua pihak.
@@ -42,7 +42,7 @@ export default function TermsPage() {
           <h2 className="text-xl font-bold text-primary">5. Hak Kekayaan Intelektual</h2>
           <p>
             Setelah pelunasan, hak penggunaan website berpindah ke client.
-            Studio Website berhak menampilkan project sebagai portfolio kecuali
+            Ukirkode berhak menampilkan project sebagai portfolio kecuali
             diminta sebaliknya.
           </p>
           <h2 className="text-xl font-bold text-primary">6. Kontak</h2>

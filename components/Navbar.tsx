@@ -8,7 +8,6 @@ const links = [
   { href: "/services", label: "Services" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
 ];
 
@@ -19,8 +18,8 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-white/85 backdrop-blur-md">
       <nav className="mx-auto flex h-[72px] max-w-6xl items-center justify-between px-6 md:px-8">
-        <Link href="/" className="font-heading text-2xl font-bold tracking-tight">
-          Studio<em className="not-italic text-accent">Website</em>
+        <Link href="/" aria-label="Ukirkode — beranda">
+          <img src="/brand/ukirkode-wordmark.svg" alt="Ukirkode" width={136} height={32} className="h-8 w-auto" />
         </Link>
 
         <ul className="hidden items-center gap-9 md:flex">

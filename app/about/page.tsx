@@ -5,7 +5,7 @@ import CTASection from "@/components/CTASection";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Studio Website adalah studio digital yang membantu bisnis berkembang melalui teknologi — website, web app, dan AI automation.",
+    "Ukirkode adalah studio digital yang membantu bisnis berkembang melalui teknologi — website, web app, dan AI automation.",
 };
 
 const values = [
@@ -34,7 +34,7 @@ export default function AboutPage() {
             Bukan Sekadar Membuat Website
           </h1>
           <p className="mt-6 leading-relaxed text-neutral-400">
-            Studio Website adalah studio digital yang membantu UMKM, startup,
+            Ukirkode adalah studio digital yang membantu UMKM, startup,
             personal brand, dan bisnis lokal memiliki website profesional,
             sistem digital, dan AI automation yang benar-benar membantu
             operasional. Kami membantu bisnis berkembang melalui teknologi.

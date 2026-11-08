@@ -8,7 +8,7 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Halo Studio Website!\n\nNama: ${form.name}\nBisnis: ${form.business}\nLayanan: ${form.service}\n\n${form.message}`;
+    const text = `Halo Ukirkode!\n\nNama: ${form.name}\nBisnis: ${form.business}\nLayanan: ${form.service}\n\n${form.message}`;
     window.open(waLink(text), "_blank");
   };
 
